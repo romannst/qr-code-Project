@@ -1,0 +1,57 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+
+    --background: hsl(212, 45%, 89%);
+    --text: hsl(216, 15%, 48%);
+    --title: hsl(218, 44%, 22%);
+
+    --font: 'Outfit';
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    background-color: var(--background);
+}
+
+/* Main */
+.wrapper {
+    width: 32rem;
+    height: 50rem;
+    background-color: var(--white);
+    margin: 23rem auto;
+    border-radius: 2rem;
+}
+.topcard {
+    padding: 1.6rem 1.6rem .5rem;
+}
+.topcard__image {
+    width: 29rem;
+    height: 29rem;
+    border-radius: 1rem;
+}
+.bottomcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    text-align: center;
+    padding: .5rem 2.6rem;
+}
+.bottomcard__title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--title);
+}
+.bottomcard__description {
+    color: var(--text);
+}
